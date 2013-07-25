@@ -1,0 +1,45 @@
+#divMain
+{
+	position:absolute;
+	width:80%;
+	height:80%;
+	border-radius: 9px;
+	border: 1px;
+	background-color: white;
+	color:#666;
+	margin-top: 5%;
+	margin-left: 9%;
+}
+
+
+#divBusqueda
+{
+	position:relative;
+	width: 96.6%;
+	height:50px;
+	top:0;
+	padding: 15px;
+}
+
+#divResultados
+{
+	position: relative;
+	padding: 15px;
+	width:50%;
+	height:85.4%;
+}
+
+#tableResults
+{
+	width:80%;
+	text-align: justify;
+}
+
+#lblEjemplo
+{
+	color:blue;
+}
+#lblEjemplo2
+{
+	color:gray;
+}

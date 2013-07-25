@@ -1,0 +1,160 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Animación</title>
+<style type="text/css">
+    div#contenedor {
+        width: 700px;
+        height: 700px;
+        margin: 0 auto;
+        border: 1px solid #333;
+        position: relative;
+    }
+     
+    .cabeza {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        border: 2px solid #333;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+     
+    .cuerpo {
+        width: 0px;
+        height: 200px;
+        border: 2px solid #333;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        top: 100px;
+    }
+     
+    .brazo_izq {
+        width: 150px;
+        height: 0px;
+        border: 2px solid #333;
+        position: absolute;;
+        left: 50px;
+        top: 130px;
+        transform:  rotate(60deg);
+        transform-origin: left bottom;
+        -ms-transform:  rotate(60deg);
+        -ms-transform-origin: left bottom;
+        -webkit-transform: rotate(60deg);
+        -webkit-transform-origin: left bottom;
+    }
+ 
+    .brazo_der {
+        width: 150px;
+        height: 0px;
+        border: 2px solid #333;
+        position: absolute;;
+        right: 46px;
+        top: 130px;
+        transform:  rotate(-90deg);
+        transform-origin: right bottom;
+        -ms-transform:  rotate(-60deg);
+        -ms-transform-origin: right bottom;
+        -webkit-transform: rotate(-60deg);
+        -webkit-transform-origin: right bottom;
+    }
+ 
+    .pierna_izq {
+        width: 150px;
+        height: 0px;
+        border: 2px solid #333;
+        position: absolute;;
+        left: 50px;
+        top: 300px;
+        transform:  rotate(60deg);
+        transform-origin: left bottom;
+        -ms-transform:  rotate(60deg);
+        -ms-transform-origin: left bottom;
+        -webkit-transform: rotate(60deg);
+        -webkit-transform-origin: left bottom;
+    }
+ 
+    .pierna_der {
+        width: 150px;
+        height: 0px;
+        border: 2px solid #333;
+        position: absolute;;
+        right: 46px;
+        top: 300px;
+        transform:  rotate(-60deg);
+        transform-origin: right bottom;
+        -ms-transform:  rotate(-60deg);
+        -ms-transform-origin: right bottom;
+        -webkit-transform: rotate(-60deg);
+        -webkit-transform-origin: right bottom;
+    }
+     
+    @keyframes corre {
+        0%      {
+                    transform: scale(50);
+                    transform-origin: center 500px;
+                }
+ 
+        33% {
+                    transform: rotate(30deg) scale(0.5);
+                    transform-origin: center 150px;
+                }
+        85% {
+                    transform: rotate(30deg) scale(0.5);
+                    transform-origin: center 150px;
+                    left: 600px;
+                }
+        100%    {
+                    transform: rotate(50deg) scale(0.5);
+                    transform-origin: center 150px;
+                    left: 600px;
+                }
+    }
+     
+    @-webkit-keyframes corre {
+        0%      {
+                     transform: scale(50);
+                    transform-origin: center 500px;
+                }
+ 
+        33% {
+                    -webkit-transform: rotate(30deg) scale(0.5);
+                    -webkit-transform-origin: center 150px;
+                }
+        85% {
+                    -webkit-transform: rotate(30deg) scale(0.5);
+                    -webkit-transform-origin: center 150px;
+                    left: 600px;
+                }
+        100%    {
+                    -webkit-transform: rotate(50deg) scale(0.5);
+                    -webkit-transform-origin: center 150px;
+                    left: 600px;
+                }
+    }
+     
+    .cabeza {
+        transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+        animation: corre 15s;
+        -webkit-animation: corre 15s;
+    }   
+</style>
+</head>
+<body>
+    <div id="contenedor">
+        <section class="cabeza">
+            <div class="cuerpo"></div>
+            <div class="brazo_izq"></div>
+            <div class="brazo_der"></div>
+            <div class="pierna_izq"></div>
+            <div class="pierna_der"></div>
+
+
+            <div class="Linea"></div>
+        </section>
+    </div>
+</body>
+</html>

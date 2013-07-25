@@ -1,0 +1,55 @@
+*{
+	font-family:sans-serif;
+	list-style:none;
+	text-decoration:none;
+	margin:0;
+	padding:0;
+}
+
+/* Posicion del item hacia la isquierda*/
+.menu > li {
+	position: relative;
+	top:0;
+	width:140px;
+}
+
+/* Estilo de fondo, color de letra, padding, etc*/
+.menu li a {
+	background-color:#0c9ba0;
+	color:#FFF;
+	display:block;
+	border:solid 1px;
+	padding:10px 12px;
+}
+
+/* Efecto al pasar el mouse al item*/
+.menu li a:hover{
+	background-color: #0fbfc6;
+}
+
+/*ocultar submenus*/
+.menu li ul
+{
+	display: none;
+	position:absolute;
+	min-width: 140px;
+}
+
+/* Mostrar sub menu - oculto*/
+.menu li:hover > ul
+{
+	display: block;
+	float: right;
+	top:0px;
+	right:-140px;
+}
+
+/* Mostrar los siguientes niveles de los sub menus, se muestran hacia la derecha*/
+.menu li ul li{
+	position: relative;
+}
+
+.menu ul li ul{
+	right: -140px; /* La posicion se resta, por que el item anterior tiene un width de 140 px y queremos que se muestre hacia la derecha  */
+	top:0;
+}

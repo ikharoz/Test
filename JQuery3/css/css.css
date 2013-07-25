@@ -1,0 +1,127 @@
+body
+{
+	background-color: black;
+}
+
+a{
+	text-decoration: none;
+	color:black;
+}
+
+#ResultadosCSS
+{
+	background-color: gray;
+	position: fixed;
+	left:40%;
+	top:5%;
+	width: 550px;
+	height: 90%;
+	border-radius: 20px;
+}
+
+#ResultadosCSS ul
+{
+	position: relative;
+	left:0px;
+}
+
+#ResultadosCSS li
+{
+	height: 50px;
+	width: 80%;
+	padding: 8px;
+	border-radius: 7px;
+	font-family: inherit;
+}
+
+#ResultadosCSS li:hover
+{
+	height: 50px;
+	font-family: inherit;
+	color:white;
+	background-color: black;
+}
+
+#MostrarResultados 
+{
+	list-style-type: none;
+}
+
+
+
+
+
+/* Mostrar div central con transparencia  */
+#divTransparencia
+{
+	width: 100%;
+	height: 100%;
+	background-color: lightgray;
+	opacity: 0.7;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+#cursora
+{
+	cursor: default;
+}
+
+
+.divTransparenciaContenido
+{
+	position: absolute;
+	left:20%;
+	padding: 15px;
+	top:4%;
+	opacity: 0.8;
+	width: 50%;
+	height: 90%;
+	border-radius: 20px;
+	z-index: 1000;
+}
+
+.centro
+{
+	background-color: white;
+	position: relative;
+	margin-top:5%;
+	margin-left:21%;
+	height: 60%;
+	width: 20%;
+
+}
+
+.centro ul
+{
+	list-style-type: none;
+}
+
+.centro li
+{
+	height: 35px;
+	background-color: lightblue;
+	margin-left: -40px;
+	padding-top: 15px;
+	text-align: center;
+}
+.centro li:hover
+{
+	background-color: white;
+}
+
+.centro a
+{
+	text-decoration: none;
+	color:black;
+}
+#contactosMultiChat li
+{
+	height:50px;
+	list-style-type: none;
+	margin-left: -8px;
+}
+
+
+/* Fin del fondo con transparencia */

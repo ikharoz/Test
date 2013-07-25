@@ -1,0 +1,165 @@
+#divMain
+{
+	position:absolute;
+	width:80%;
+	height:80%;
+	border-radius: 9px;
+	border: 1px;
+	background-color: white;
+	color:#666;
+	margin-top: 5%;
+	margin-left: 9%;
+}
+
+
+#divEsconder
+{
+	background-color:gray;
+	border-radius: 15px;
+	float:left;
+	top:0px;
+	height:470px;
+	width:20%;
+}
+
+#divEsconder ul
+{
+	list-style-type:none;
+}
+
+#divEsconder li
+{
+	background-color:lightgray;
+	text-align:center;
+	color:black;
+	width:90%;
+	height:25px;
+}
+
+#divEsconder li:hover
+{
+	background-color:gray;
+}
+
+#divEsconder a{
+	text-decoration:none;
+}
+
+#imgAccion
+{
+	position:relative;
+	left:-3px;
+	top:12px;
+	z-index: 1000;
+	width: 50px;
+}
+
+#mostrarWeb
+{
+	float:right;
+	background-color:lightblue;
+	border-radius: 15px;
+	width:95%;
+	height:100%;
+}
+
+#esepan
+{
+	color:white; 
+	position: fixed;
+	left:37%;
+	font-size: 25pt;
+	top:-1px;
+}
+
+
+
+
+/* Modificación del scroll */
+/* Turn on a 13x13 scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 13px;
+}
+
+::-webkit-scrollbar-button:vertical {
+    background-color: silver;
+    border: 1px solid gray;
+}
+
+/* Turn on single button up on top, and down on bottom */
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: block;
+}
+
+/* Turn off the down area up on top, and up area on bottom */
+::-webkit-scrollbar-button:vertical:start:increment,
+::-webkit-scrollbar-button:vertical:end:decrement {
+    display: none;
+}
+
+/* Place The scroll down button at the bottom */
+::-webkit-scrollbar-button:vertical:increment {
+    display: none;
+}
+
+/* Place The scroll up button at the up */
+::-webkit-scrollbar-button:vertical:decrement {
+    display: none;
+}
+
+/* Place The scroll down button at the bottom */
+::-webkit-scrollbar-button:horizontal:increment {
+    display: none;
+}
+
+/* Place The scroll up button at the up */
+::-webkit-scrollbar-button:horizontal:decrement {
+    display: none;
+}
+
+::-webkit-scrollbar-track:vertical {
+    background-color: blue;
+    border: 1px dashed pink;
+}
+
+/* Top area above thumb and below up button */
+::-webkit-scrollbar-track-piece:vertical:start {
+    border: 0px;
+}
+
+/* Bottom area below thumb and down button */
+::-webkit-scrollbar-track-piece:vertical:end {
+    border: 0px;
+}
+
+/* Track below and above */
+::-webkit-scrollbar-track-piece {
+    background-color: silver;
+}
+
+/* The thumb itself */
+::-webkit-scrollbar-thumb:vertical {
+    height: 50px;
+    background-color: gray;
+}
+
+/* The thumb itself */
+::-webkit-scrollbar-thumb:horizontal {
+    height: 50px;
+    background-color: gray;
+}
+
+/* Corner */
+::-webkit-scrollbar-corner:vertical {
+    background-color: black;
+}
+
+/* Resizer */
+::-webkit-scrollbar-resizer:vertical {
+    background-color: gray;
+}
+
+
+/* Termina la modificación del scroll */
